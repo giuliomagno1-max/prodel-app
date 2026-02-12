@@ -9,7 +9,7 @@ NOME_AZIENDA = "PRODEL SISTEMI srls"
 INDIRIZZO_AZIENDA = "Via Padre Teodoro Valle, Priverno(LT)"
 TEL_AZIENDA = "Tel. 380 7523630"
 LOGO_FILE = "logo.png"
-URL_FOGLIO = "URL_FOGLIO = "https://docs.google.com/spreadsheets/d/1eFQ16WnoyboZCA6M0MtmLdoGdjuVnnI5BDWupgWcAhk/edit?usp=sharing"" # <--- METTI IL TUO LINK QUI
+URL_FOGLIO = "https://docs.google.com/spreadsheets/d/1eFQ16WnoyboZCA6M0MtmLdoGdjuVnnI5BDWupgWcAhk/edit?usp=sharing" # <--- METTI IL TUO LINK QUI
 
 st.set_page_config(page_title=f"PRODEL - Cloud", layout="centered")
 
@@ -113,4 +113,5 @@ elif st.session_state.pagina == "Archivio":
             pdf_b = genera_pdf(row)
 
             c2.download_button("📄 PDF", data=pdf_b, file_name="Prev.pdf", key=f"p_{i}")
+
 
