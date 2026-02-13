@@ -8,7 +8,7 @@ from datetime import datetime
 # --- CONFIGURAZIONE ---
 NOME_AZIENDA = "PRODEL SISTEMI srls"
 URL_LETTURA = "https://docs.google.com/spreadsheets/d/1eFQ16WnoyboZCA6M0MtmLdoGdjuVnnI5BDWupgWcAhk/gviz/tq?tqx=out:csv&sheet=Preventivi"
-URL_SCRITTURA = "https://script.google.com/macros/s/AKfycbzMQu35tgzjEdyUjQ_3O8Jd-zWmdffqko4qT8mv3OIm-F0no5uhh6Aqa68NDjZgr4Pv/exec"
+URL_SCRITTURA = "https://script.google.com/macros/s/AKfycbzysEHWi811ETCf1skxp4N4IPGuCABFJvuUVudIWh-vW9vkmwlxdugFCUnoUN5P3sFQ/exec"
 
 st.set_page_config(page_title="PRODEL", layout="centered")
 
@@ -69,3 +69,4 @@ with tab2:
         with st.expander(f"{row['Data']} - {row['Cognome']}"):
             st.write(f"Importo: {row['Totale_Ivato']} €")
             st.download_button("Scarica PDF", data=genera_pdf(row), file_name="Prev.pdf", key=f"d_{i}")
+
