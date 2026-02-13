@@ -12,7 +12,7 @@ LOGO_FILE = "logo.png"
 
 # --- CONFIGURAZIONE CLOUD ---
 URL_LETTURA = "https://docs.google.com/spreadsheets/d/1eFQ16WnoyboZCA6M0MtmLdoGdjuVnnI5BDWupgWcAhk/gviz/tq?tqx=out:csv&sheet=Preventivi"
-URL_SCRITTURA = "https://script.google.com/macros/s/AKfycbzMQu35tgzjEdyUjQ_3O8Jd-zWmdffqko4qT8mv3OIm-F0no5uhh6Aqa68NDjZgr4Pv/exec" # <--- Incolla qui il link di Apps Script
+URL_SCRITTURA = "https://script.google.com/macros/s/AKfycbzysEHWi811ETCf1skxp4N4IPGuCABFJvuUVudIWh-vW9vkmwlxdugFCUnoUN5P3sFQ/exec" # <--- Incolla qui il link di Apps Script
 
 st.set_page_config(page_title="PRODEL Cloud Free", layout="centered")
 
@@ -83,4 +83,5 @@ elif st.session_state.pagina == "Archivio":
         with st.expander(f"{row['Nome']} {row['Cognome']} - {row['Totale_Ivato']:.2f}€"):
             pdf_b = genera_pdf(row)
             st.download_button("📄 PDF", data=pdf_b, file_name=f"Prev_{row['Cognome']}.pdf", key=f"p_{i}")
+
 
