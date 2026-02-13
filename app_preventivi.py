@@ -85,3 +85,4 @@ elif st.session_state.pagina == "Archivio":
             st.download_button("📄 PDF", data=pdf_b, file_name=f"Prev_{row['Cognome']}.pdf", key=f"p_{i}")
 
 
+
