@@ -70,3 +70,4 @@ with tab2:
             st.write(f"Importo: {row['Totale_Ivato']} €")
             st.download_button("Scarica PDF", data=genera_pdf(row), file_name="Prev.pdf", key=f"d_{i}")
 
+
