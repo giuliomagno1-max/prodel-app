@@ -83,3 +83,4 @@ elif st.session_state.pagina == "Archivio":
         with st.expander(f"{row['Nome']} {row['Cognome']} - {row['Totale_Ivato']:.2f}€"):
             pdf_b = genera_pdf(row)
             st.download_button("📄 PDF", data=pdf_b, file_name=f"Prev_{row['Cognome']}.pdf", key=f"p_{i}")
+
