@@ -15,7 +15,7 @@ LOGO_FILE = "logo.png"
 # Link per LEGGERE (CSV)
 URL_LETTURA = "https://docs.google.com/spreadsheets/d/1eFQ16WnoyboZCA6M0MtmLdoGdjuVnnI5BDWupgWcAhk/gviz/tq?tqx=out:csv&sheet=Preventivi"
 # Link per SCRIVERE (Apps Script) - ASSICURATI CHE SIA L'URL /exec
-URL_SCRITTURA = "https://script.google.com/macros/s/AKfycbzMQu35tgzjEdyUjQ_3O8Jd-zWmdffqko4qT8mv3OIm-F0no5uhh6Aqa68NDjZgr4Pv/exec"
+URL_SCRITTURA = "https://script.google.com/macros/s/AKfycbzysEHWi811ETCf1skxp4N4IPGuCABFJvuUVudIWh-vW9vkmwlxdugFCUnoUN5P3sFQ/exec"
 
 st.set_page_config(page_title="PRODEL Cloud", layout="centered")
 
@@ -178,6 +178,7 @@ elif st.session_state.pagina == "Archivio":
                         mime="application/pdf",
                         key=f"btn_{i}"
                     )
+
 
 
 
